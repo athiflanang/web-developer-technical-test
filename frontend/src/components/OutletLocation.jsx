@@ -35,12 +35,12 @@ export default function OutletLocation() {
   ];
   return (
     <>
-      <div className="max-w-md mx-auto p-4 w-full">
+      <div className="max-w-md mx-auto p-4 w-full pb-10 space-y-4">
         <div className="mb-6">
           <h1 className="text-xl font-bold text-foreground text-black">
             Outlet Location
           </h1>
-          <p className="text-sm text-muted-foreground font-semibold  text-black">
+          <p className="text-sm text-muted-foreground font-semibold text-black">
             Explore your options
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function OutletLocation() {
 
         <a
           href="#"
-          className="text-orange-500 font-semibold hover:text-orange-600 mt-10"
+          className="block text-orange-500 font-semibold hover:text-orange-600 text-left mt-4"
         >
           SEE ALL
         </a>

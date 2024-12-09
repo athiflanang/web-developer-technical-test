@@ -18,44 +18,47 @@ export default function CaroselProduct() {
   ];
   return (
     <>
-      <div>
-        <div className="flex items-center justify-between mb-6 px-4">
+      <div className="px-4 md:px-6">
+        <div className="flex items-center justify-between mb-4">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">
+            <h2 className="text-xl font-bold text-gray-900">
               Redeem Your Rewards
             </h2>
-            <p className="text-sm text-gray-500">
+            <p className="text-xs text-gray-500">
               Earn more to get your rewards
             </p>
           </div>
           <a
             href="#"
-            className="text-orange-500 font-semibold hover:text-orange-600"
+            className="text-orange-500 font-semibold hover:text-orange-600 text-xs"
           >
             SEE ALL
           </a>
         </div>
-        <div className="carousel max-w-4xl mx-auto px-4">
-          <div className="flex items-center justify-center overflow-x-auto space-x-4 pb-4">
+        <div className="w-full overflow-x-auto whitespace-nowrap">
+          <div className="flex space-x-2 pb-2">
             {rewards.map((reward, index) => (
               <div
                 key={index}
-                className="carousel-item basis-1/3 md:basis-1/4 lg:basis-1/5 flex-shrink-0 bg-white min-w-[200px] max-w-[200px]"
+                className="inline-block bg-white border border-gray-200 rounded-lg shadow-md w-[120px]"
               >
-                <div className="card border-0 shadow-md hover:shadow-lg transition-shadow rounded-lg">
-                  <div className="p-4">
-                    <div className="aspect-square relative bg-gray-100 rounded-lg mb-4 overflow-hidden">
-                      <img
-                        src={reward.img}
-                        alt={reward.name}
-                        className="object-cover w-full h-full rounded-md"
-                      />
-                    </div>
-                    <h3 className="font-medium text-gray-900">{reward.name}</h3>
-                    <p className="text-orange-500 font-semibold">
-                      {reward.points} Pts
-                    </p>
+                <div className="p-2">
+                  <div className="relative aspect-square bg-gray-100 rounded-lg mb-2 overflow-hidden">
+                    <img
+                      src={reward.img}
+                      alt={reward.name}
+                      className="object-cover w-full h-full rounded-md"
+                    />
                   </div>
+                  <h3
+                    className="text-xs font-medium text-gray-900 truncate"
+                    title={reward.name}
+                  >
+                    {reward.name}
+                  </h3>
+                  <p className="text-orange-500 font-bold text-xs mt-1">
+                    {reward.points} Pts
+                  </p>
                 </div>
               </div>
             ))}
