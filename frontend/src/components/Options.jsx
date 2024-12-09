@@ -4,7 +4,7 @@ import {
   Ticket,
   Mail,
   CalendarDays,
-  MessageSquare,
+  MessagesSquare,
 } from "lucide-react";
 
 export default function Options() {
@@ -12,40 +12,40 @@ export default function Options() {
     <>
       <div className="grid grid-cols-3 items-center justify-items-center gap-10 mt-10">
         <div className="flex flex-col items-center justify-center">
-          <button className="btn btn-circle btn-ghost">
+          <button className="rounded-[100px] p-2 bg-cyan-100 hover:bg-cyan-200 transition duration-200 hover:shadow-lg">
             <ShoppingBasket size={40} color="#18b7ec" />
           </button>
-          <p className="text-sm text-black">Order</p>
+          <p className="text-xs text-black">Order</p>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <button className="btn btn-circle btn-ghost">
+          <button className="rounded-[100px] p-2 bg-red-100 hover:bg-red-200 transition duration-200 hover:shadow-lg">
             <Gift size={40} color="#ec4b4b" />
           </button>
-          <p className="text-sm text-black">Redeem</p>
+          <p className="text-xs text-black">Redeem</p>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <button className="btn btn-circle btn-ghost">
+          <button className="rounded-[100px] p-2 bg-pink-100 hover:bg-pink-200 transition duration-200 hover:shadow-lg">
             <Ticket size={40} color="#ec4bb9" />
           </button>
-          <p className="text-sm text-black">My Vouchers</p>
+          <p className="text-xs text-black">My Vouchers</p>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <button className="btn btn-circle btn-ghost">
+          <button className="rounded-[100px] p-2 bg-blue-100 hover:bg-blue-200 transition duration-200 hover:shadow-lg">
             <Mail size={40} color="#5973f3" />
           </button>
-          <p className="text-sm text-black">Privilege</p>
+          <p className="text-xs text-black">Privilege</p>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <button className="btn btn-circle btn-ghost">
+          <button className="rounded-[100px] p-2 bg-purple-100 hover:bg-purple-200 transition duration-200 hover:shadow-lg">
             <CalendarDays size={40} color="#cbaafd" />
           </button>
-          <p className="text-sm text-black">History</p>
+          <p className="text-xs text-black">History</p>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <button className="btn btn-circle btn-ghost">
-            <MessageSquare size={40} color="#62fb60" />
+          <button className="rounded-[100px] p-2 bg-green-100 hover:bg-green-200 transition duration-200 hover:shadow-lg">
+            <MessagesSquare size={40} color="#62fb60" />
           </button>
-          <p className="text-sm text-black">Contact Us</p>
+          <p className="text-xs text-black">Contact Us</p>
         </div>
       </div>
     </>

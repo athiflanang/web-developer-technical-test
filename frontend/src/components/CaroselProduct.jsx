@@ -38,25 +38,22 @@ export default function CaroselProduct() {
         <div className="w-full overflow-x-auto whitespace-nowrap">
           <div className="flex space-x-2 pb-2">
             {rewards.map((reward, index) => (
-              <div
-                key={index}
-                className="inline-block bg-white border border-gray-200 rounded-lg shadow-md w-[120px]"
-              >
+              <div key={index} className="inline-block rounded-lg w-[120px]">
                 <div className="p-2">
                   <div className="relative aspect-square bg-gray-100 rounded-lg mb-2 overflow-hidden">
                     <img
                       src={reward.img}
                       alt={reward.name}
-                      className="object-cover w-full h-full rounded-md"
+                      className="object-cover w-full h-full rounded-lg border-2 border-gray-200"
                     />
                   </div>
                   <h3
-                    className="text-xs font-medium text-gray-900 truncate"
+                    className="text-sm font-bold text-gray-900 truncate"
                     title={reward.name}
                   >
                     {reward.name}
                   </h3>
-                  <p className="text-orange-500 font-bold text-xs mt-1">
+                  <p className="text-orange-500 font-bold text-sm mt-1">
                     {reward.points} Pts
                   </p>
                 </div>
