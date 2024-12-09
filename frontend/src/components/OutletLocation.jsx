@@ -69,7 +69,7 @@ export default function OutletLocation() {
 
         <a
           href="#"
-          className="block text-orange-500 font-semibold hover:text-orange-600 text-left mt-4"
+          className="block text-orange-500 font-extrabold hover:text-orange-600 text-left mt-4"
         >
           SEE ALL
         </a>

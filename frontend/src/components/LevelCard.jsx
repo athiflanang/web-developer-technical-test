@@ -3,13 +3,13 @@ import { LockIcon, Crown } from "lucide-react";
 export default function LevelCard() {
   return (
     <>
-      <div className="px-6 md:px-12">
-        <div className="w-full max-w-md p-4 bg-white rounded-lg shadow-md mt-10">
+      <div>
+        <div className="w-full max-w-md px-10 py-3 bg-white rounded-lg shadow-md mt-2">
           <div className="flex justify-between items-center mb-4">
-            <h3 className="text-xl font-semibold text-black">Your Level</h3>
+            <h3 className="text-md font-bold text-black">Your Level</h3>
             <a
               href="#"
-              className="text-orange-500 hover:text-orange-600 text-sm font-medium"
+              className="text-orange-500 hover:text-orange-600 text-sm font-bold"
             >
               LEARN MORE
             </a>
@@ -17,53 +17,65 @@ export default function LevelCard() {
           <div className="flex items-center justify-items-center justify-center mb-4">
             <div className="flex items-center text-center justify-items-center justify-center">
               <div className="flex flex-col items-center">
-                <div className="relative w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
-                  <Crown className="w-6 h-6 text-gray-600" />
-                  <div className="badge badge-lg badge-success absolute -bottom-1 right-0 text-white w-4 h-4 p-0 flex items-center justify-center rounded-full">
+                <div className="relative w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center">
+                  <Crown className="w-4 h-4 text-white" />
+                  <div className="badge badge-sm badge-success absolute -bottom-0.5 right-0 text-white w-3 h-3 p-0 flex items-center justify-center rounded-full">
                     ✓
                   </div>
                 </div>
-                <span className="text-sm text-gray-600">Silver</span>
+                <span className="text-xs text-black font-extrabold">
+                  Silver
+                </span>
               </div>
-              <div className="flex-1 mx-2 h-[4px] w-[80px] bg-gray-200" />
+              <div className="flex-1 mx-1 h-[2px] w-[40px] bg-black rounded-md" />
               <div className="flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center">
-                  <LockIcon className="w-6 h-6 text-yellow-400" />
+                <div className="w-8 h-8 rounded-full bg-yellow-300 flex items-center justify-center">
+                  <LockIcon className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-sm text-gray-600">Gold</span>
+                <span className="text-xs text-gray-400 font-bold">Gold</span>
               </div>
-              <div className="flex-1 mx-2 h-[4px] w-[80px] bg-gray-200" />
+              <div className="flex-1 mx-1 h-[2px] w-[40px] bg-black rounded-md" />
               <div className="flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
-                  <LockIcon className="w-6 h-6 text-gray-400" />
+                <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
+                  <LockIcon className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-sm text-gray-400">Platinum</span>
+                <span className="text-xs text-gray-400 font-bold">
+                  Platinum
+                </span>
               </div>
             </div>
           </div>
-          <div className="text-sm text-gray-600 mb-4 flex flex-col items-start">
+          <div className="text-sm text-gray-600 flex flex-col items-center">
             <progress
-              className="progress w-100 h-2 mb-2"
+              className="progress w-full h-2 mb-2"
               value="40"
               max="100"
             ></progress>
-            <div className="text-left">
-              Spend <span className="font-semibold">3,500,001</span> by{" "}
-              <span className="font-semibold">23 Nov 2024</span> to reach{" "}
-              <span className="font-semibold">Gold</span>
+            <div className="text-center">
+              Spend <span className="font-bold text-black">3,500,001</span> by{" "}
+              <span className="font-bold text-black">23 Nov 2024</span> to reach{" "}
+              <span className="font-bold text-black">Gold</span>
             </div>
           </div>
-          <div className="flex items-center justify-between pt-4 border-t">
-            <div className="space-y-1">
-              <h4 className="font-semibold">Bakmi GM Points</h4>
-              <p className="text-sm text-gray-500">
-                40 will expire on{" "}
-                <a href="#" className="text-blue-500 hover:text-blue-600">
-                  22 Feb 2024. See Details
+        </div>
+        <div className="w-full max-w-md p-4 bg-white rounded-lg shadow-md mt-5">
+          <div className="flex items-center justify-between">
+            <div>
+              <h4 className="font-bold text-sm text-black">Bakmi GM Points</h4>
+              <p className="text-xs text-gray-400">
+                <span className="font-bold">40</span> will expire on{" "}
+                <a href="#" className="font-bold">
+                  22 Feb 2024.{" "}
+                </a>
+                <a
+                  href=""
+                  className="text-blue-500 hover:text-blue-600 underline font-bold"
+                >
+                  See Details
                 </a>
               </p>
             </div>
-            <span className="text-2xl font-bold text-black">40</span>
+            <span className="text-sm font-extrabold text-black">40</span>
           </div>
         </div>
       </div>

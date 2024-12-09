@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-slate-100">
+      <div className="navbar bg-white">
         <div className="flex-1">
           <a className="btn btn-ghost">
             <img

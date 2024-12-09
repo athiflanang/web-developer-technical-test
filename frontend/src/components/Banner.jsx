@@ -12,7 +12,7 @@ export default function Banner() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <button className="btn btn-accent text-blue-600">
+              <button className="bg-white py-3 px-5 rounded-lg font-bold text-blue-500 hover:bg-slate-300 transition duration-200 transform hover:scale-105 hover:shadow-lg">
                 REFER NOW
               </button>
             </div>

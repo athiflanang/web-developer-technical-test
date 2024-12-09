@@ -69,7 +69,7 @@ export default function PrevilegeCards() {
                 />
               </div>
               <div className="card-body">
-                <div className="flex items-center mt-2">
+                <div className="flex items-center mt-2 text-left">
                   <p className="text-sm font-bold mr-2 text-black">
                     {privilege.description}
                   </p>
