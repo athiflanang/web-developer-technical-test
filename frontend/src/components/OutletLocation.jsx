@@ -1,5 +1,15 @@
 import { MapPin } from "lucide-react";
-
+import {
+  Box,
+  Typography,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  IconButton,
+  Divider,
+  Link,
+} from "@material-tailwind/react";
 export default function OutletLocation() {
   const locations = [
     {
@@ -37,10 +47,10 @@ export default function OutletLocation() {
     <>
       <div className="max-w-md mx-auto p-4 w-full pb-10 space-y-4">
         <div className="mb-6">
-          <h1 className="text-xl font-bold text-foreground text-black">
+          <h1 className="text-xl font-extrabold text-foreground text-black">
             Outlet Location
           </h1>
-          <p className="text-sm text-muted-foreground font-semibold text-black">
+          <p className="text-xs text-muted-foreground text-black">
             Explore your options
           </p>
         </div>
@@ -49,9 +59,8 @@ export default function OutletLocation() {
           {locations.map((location, index) => (
             <div
               key={index}
-              className="flex items-start gap-3 pb-4 border-b last:border-b-0"
+              className="flex items-start gap-3 pb-3 border-b-[3px] last:border-b-[3px]"
             >
-              <MapPin className="h-5 w-5 text-muted-foreground shrink-0 mt-1" />
               <div className="space-y-1 min-w-0">
                 <h2 className="font-medium text-foreground text-black">
                   {location.name}
@@ -59,7 +68,8 @@ export default function OutletLocation() {
                 <p className="text-sm text-muted-foreground break-words">
                   {location.address}
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="flex items-center text-sm text-muted-foreground">
+                  <MapPin className="h-5 w-5 text-gray-500 shrink-0 mr-6" />
                   {location.distance}
                 </p>
               </div>

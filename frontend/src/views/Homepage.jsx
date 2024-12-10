@@ -11,7 +11,7 @@ import OutletLocation from "../components/OutletLocation";
 export default function Homepage() {
   return (
     <>
-      <div className="min-h-screen w-full bg-slate-100">
+      <div className="min-h-screen w-full bg-white">
         <Navbar />
         <Carosel />
         <div className="flex items-center justify-center">
@@ -23,13 +23,13 @@ export default function Homepage() {
         <div className="flex items-center justify-center mt-10">
           <Banner />
         </div>
-        <div className="flex items-center justify-center mt-10">
+        <div className="flex items-center justify-center mt-16">
           <CaroselProduct />
         </div>
-        <div className="flex items-center justify-center mt-10">
+        <div className="flex items-center justify-center mt-1">
           <PrevilegeCards />
         </div>
-        <div className="flex items-center justify-center mt-10">
+        <div className="flex items-center justify-center mt-1">
           <OutletLocation />
         </div>
       </div>
