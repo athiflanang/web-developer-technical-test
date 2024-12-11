@@ -48,7 +48,7 @@ export default function PrevilegeCards() {
   return (
     <>
       <div className="container mx-auto p-4">
-        <h2 className="text-2xl font-bold text-black">Privileges</h2>
+        <h2 className="text-xl font-extrabold text-black">Privileges</h2>
         <p className="mb-8 text-black text-sm">
           Keep discovering our promo and news
         </p>

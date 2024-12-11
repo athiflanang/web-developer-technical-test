@@ -4,51 +4,57 @@ export default function LevelCard() {
   return (
     <>
       <div>
-        <div className="w-full max-w-md px-5 py-3 bg-white rounded-lg shadow-md mt-2">
-          <div className="flex justify-between items-center mb-4">
-            <h3 className="text-[14px] font-bold text-black">Your Level</h3>
-            <a
-              href="#"
-              className="text-orange-500 hover:text-orange-600 text-[12px] font-bold"
-            >
-              LEARN MORE
-            </a>
-          </div>
-          <div className="flex items-center justify-items-center justify-center mb-4 gap-2">
-            <div className="flex flex-col items-center">
-              <div className="relative w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center">
-                <Crown className="w-4 h-4 text-white" />
-                <div className="badge badge-sm badge-success absolute -bottom-0.5 right-0 text-white w-3 h-3 p-0 flex items-center justify-center rounded-full">
-                  ✓
+        <div className="w-full max-w-md py-4 bg-white rounded-lg shadow-lg mt-4">
+          <div className="w-[370px]">
+            <div className="flex justify-between items-center mb-4 mx-3">
+              <h3 className="text-sm font-extrabold text-black">Your Level</h3>
+              <a
+                href="#"
+                className="text-orange-500 hover:text-orange-600 text-xs font-bold"
+              >
+                LEARN MORE
+              </a>
+            </div>
+            <div className="flex items-center justify-items-center justify-center mb-5 gap-3">
+              <div className="flex flex-col items-center">
+                <div className="relative w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center">
+                  <Crown className="w-4 h-4 text-white" />
+                  <div className="badge badge-sm badge-success absolute -bottom-0.5 right-0 text-white w-3 h-3 p-0 flex items-center justify-center rounded-full">
+                    ✓
+                  </div>
                 </div>
+                <span className="text-xs text-black font-extrabold">
+                  Silver
+                </span>
               </div>
-              <span className="text-xs text-black font-extrabold">Silver</span>
-            </div>
-            <div className="mx-1 h-[2px] w-[30px] my-6 bg-black rounded-md" />
-            <div className="flex flex-col items-center">
-              <div className="w-8 h-8 rounded-full bg-yellow-300 flex items-center justify-center">
-                <LockIcon className="w-4 h-4 text-white" />
+              <div className="mx-1 h-[2px] w-[30px] mb-4 bg-black rounded-md" />
+              <div className="flex flex-col items-center">
+                <div className="w-8 h-8 rounded-full bg-yellow-300 flex items-center justify-center">
+                  <LockIcon className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-xs text-gray-400 font-bold">Gold</span>
               </div>
-              <span className="text-xs text-gray-400 font-bold">Gold</span>
-            </div>
-            <div className="mx-1 h-[2px] w-[30px] bg-black rounded-md" />
-            <div className="flex flex-col items-center">
-              <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-                <LockIcon className="w-4 h-4 text-white" />
+              <div className="mx-1 h-[2px] w-[30px] mb-4 bg-black rounded-md" />
+              <div className="flex flex-col items-center">
+                <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
+                  <LockIcon className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-xs text-gray-400 font-bold">
+                  Platinum
+                </span>
               </div>
-              <span className="text-xs text-gray-400 font-bold">Platinum</span>
             </div>
-          </div>
-          <div className="text-sm text-gray-600 flex flex-col items-center">
-            <progress
-              className="progress w-full h-2 mb-2"
-              value="40"
-              max="100"
-            ></progress>
-            <div className="text-center">
-              Spend <span className="font-bold text-black">3,500,001</span> by{" "}
-              <span className="font-bold text-black">23 Nov 2024</span> to reach{" "}
-              <span className="font-bold text-black">Gold</span>
+            <div className="text-sm text-gray-600 flex flex-col items-start mx-4">
+              <progress
+                className="progress w-full h-2 mb-2"
+                value="40"
+                max="100"
+              ></progress>
+              <div className="text-start">
+                Spend <span className="font-bold text-black">3,500,001</span> by{" "}
+                <span className="font-bold text-black">23 Nov 2024</span> to
+                reach <span className="font-bold text-black">Gold</span>
+              </div>
             </div>
           </div>
         </div>

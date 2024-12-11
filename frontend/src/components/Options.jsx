@@ -10,7 +10,7 @@ import {
 export default function Options() {
   return (
     <>
-      <div className="grid grid-cols-3 items-center justify-items-center gap-10 mt-10">
+      <div className="grid grid-cols-3 items-center justify-items-center gap-x-16 gap-y-8 mt-10">
         <div className="flex flex-col items-center justify-center">
           <button className="rounded-[100px] p-2 bg-cyan-100 hover:bg-cyan-200 transition duration-200 hover:shadow-lg">
             <ShoppingBasket size={40} color="#18b7ec" />

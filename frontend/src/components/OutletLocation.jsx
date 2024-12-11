@@ -65,10 +65,10 @@ export default function OutletLocation() {
                 <h2 className="font-medium text-foreground text-black">
                   {location.name}
                 </h2>
-                <p className="text-sm text-muted-foreground break-words">
+                <p className="text-xs text-muted-foreground break-words">
                   {location.address}
                 </p>
-                <p className="flex items-center text-sm text-muted-foreground">
+                <p className="flex items-center text-xs text-muted-foreground">
                   <MapPin className="h-5 w-5 text-gray-500 shrink-0 mr-6" />
                   {location.distance}
                 </p>

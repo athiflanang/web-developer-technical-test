@@ -31,27 +31,27 @@ export default function CaroselProduct() {
       <div className="px-4 md:px-6 overflow-hidden">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h2 className="text-xl font-bold text-gray-900">
+            <h2 className="text-xl font-extrabold text-gray-900">
               Redeem Your Rewards
             </h2>
             <p className="text-sm text-black">Earn more to get your rewards</p>
           </div>
           <a
             href="#"
-            className="text-orange-500 font-semibold hover:text-orange-600 text-xs"
+            className="text-orange-500 font-extrabold hover:text-orange-600 text-xs"
           >
             SEE ALL
           </a>
         </div>
         <div className="relative w-full">
           <div className="w-full overflow-x-auto overflow-y-hidden">
-            <div className="flex space-x-4 pb-4 whitespace-nowrap">
+            <div className="flex space-x-0 pb-2 whitespace-nowrap">
               {rewards.map((reward, index) => (
                 <div
                   key={index}
-                  className="inline-block rounded-lg w-[180px] shrink-0"
+                  className="inline-block rounded-lg w-[165px] shrink-0"
                 >
-                  <div className="p-2">
+                  <div className="p-1.5">
                     <div className="relative aspect-square bg-gray-100 rounded-lg mb-2 overflow-hidden">
                       <img
                         src={reward.img}
@@ -60,7 +60,7 @@ export default function CaroselProduct() {
                       />
                     </div>
                     <h3
-                      className="text-sm font-bold text-gray-900 truncate"
+                      className="text-sm font-extrabold text-gray-900 truncate"
                       title={reward.name}
                     >
                       {reward.name}

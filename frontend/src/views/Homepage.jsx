@@ -26,7 +26,7 @@ export default function Homepage() {
         <div className="flex items-center justify-center mt-16">
           <CaroselProduct />
         </div>
-        <div className="flex items-center justify-center mt-1">
+        <div className="flex items-center justify-center">
           <PrevilegeCards />
         </div>
         <div className="flex items-center justify-center mt-1">
